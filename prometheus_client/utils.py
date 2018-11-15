@@ -5,6 +5,7 @@ MINUS_INF = float("-inf")
 
 
 def floatToGoString(d):
+    d = float(d)
     if d == INF:
         return '+Inf'
     elif d == MINUS_INF:
@@ -12,4 +13,4 @@ def floatToGoString(d):
     elif math.isnan(d):
         return 'NaN'
     else:
-        return repr(float(d))
+        return repr(d)
